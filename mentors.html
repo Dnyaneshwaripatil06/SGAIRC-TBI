@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/x-icon" href="assets\img\logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            height: 2000px;
+        }
+
+        .icon-bar {
+            position: fixed;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .icon-bar a {
+            display: block;
+            text-align: center;
+            padding: 16px;
+            transition: all 0.3s ease;
+            color: white;
+            font-size: 20px;
+        }
+
+        .icon-bar a:hover {
+            background-color: #000;
+        }
+
+        .facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .content {
+            margin-left: 75px;
+            font-size: 30px;
+        }
+    </style>
+    <style>
+        /* Make the image fully responsive */
+        .carousel-inner img {
+            width: 100%;
+            height: 1500;
+        }
+    </style>
+    <style>
+        main {
+            align-items: center;
+        }
+
+        table {
+            width: 50%;
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table th,
+        td {
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table td {
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+        }
+
+        tr:nth-child(even) {
+            background-color: #D6EEEE;
+        }
+
+        .directors {
+            width: 50%;
+            margin: 50px auto;
+            font-size: 20px;
+        }
+
+        .directors td,
+        th {
+            padding: 20px 30px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .governBody {
+            width: 60%;
+            margin: 50px auto;
+        }
+        table img{
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Mentors</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+    <meta property="og:title" content="">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+    <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.jpg" rel="icon">
+    <link href="assets/img/logo.jpg" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: SGAIRC 1.0
+  * Template URL:https://sgiarctbi.ssgmce.ac.in/
+  * Author: Deepavali Patil in association with Bootstrap
+  ======================================================== -->
+</head>
+
+<body>
+    <div class="icon-bar">
+        <a href="https://www.facebook.com/login/" target=_blank class="facebook"> <i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com/i/flow/login" target=_blank class="twitter"> <i class="fa fa-twitter"></i></a>
+        <a href="https://www.blogger.com/dashboard/reading?tab=wj&bpli=1&pli=1&feed=https%3A%2F%2Ffeeds.feedburner.com%2FBloggerBuzz"
+          target=_blank class="google"><i class="fa fa-google"></i></a>
+        <a href="https://www.linkedin.com/login" target=_blank class="linkedin"> <i class="fa fa-linkedin"></i></a>
+        <a href="https://www.youtube.com/watch?v=7nM-mm1P2uA&t=148s" target=_blank class="youtube"><i
+            class="fa fa-youtube"></i></a>
+      </div>
+    
+      <!-- ======= Header ======= -->
+      <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center justify-content-between">
+    
+          <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>
+          <!-- Uncomment below if yoImperialmr-auto"><a href="index.html"></a></h1> -->
+    
+          <nav id="navbar" class="navbar">
+            <ul>
+              <!-- <li><a class="nav-link scrollto active" href="#hero"></a></li> -->
+              <li><a class="nav-link" href="#hero">Home</a></li>
+    
+              <li class="dropdown"><a href="#AboutSGIARC-TBI"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li class="dropdown"><a href="#">About SGAIRC-TBI Foundation</a></li>
+    
+                  <li class="dropdown"><a href="https://ssgmce.ac.in/" target=_blank>Host Institute-SSGMCE</a></li>
+                  <li class="dropdown"><a href="#">What We Do</a></li>
+                  <li class="dropdown"><a href="advisory_board.html" target="_blank">Advisory Board</a></li>
+                  <li class="dropdown"><a href="board_of_directory.html">Board of Directors</a></li>
+                  <li class="dropdown"><a href="#OperatingTeam">Operating Team</a></li>
+                  <li class="dropdown"><a href="mentors.html">Our Mentors</a></li>
+                  <li class="dropdown"><a href="faqs.html">FAQs</a></li>
+    
+                </ul>
+              </li>
+    
+              <!--____________ end of about us menu-->
+              <li class="dropdown"><a href="incubation.html"><span>Incubation Benefits</span> <i
+                    class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="incubation.html">Infrastructure</a></li>
+                  <li><a href="incubation.html">Funding</a></li>
+                  <li><a href="incubation.html">Mentorship</a></li>
+                  <li><a href="incubation.html">Consultancy</a></li>
+                </ul>
+              </li>
+              <!--____________ end of Services menu-->
+    
+              <li class="dropdown"><a href="#portfolio1"><span>Startup Portfolio</span> <i
+                    class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="stratup_portfolio.html">Process</a></li>
+                  <li><a href="stratup_portfolio.html">Active Startups</a></li>
+                  <li><a href="stratup_portfolio.html">Graduated Startups</a></li>
+                  <li><a href="stratup_portfolio.html">Startup Achievements</a></li>
+                  <li><a href="registration.html" target="_blank">Careers</a></li>
+                </ul>
+              </li>
+              <!--____________ end of Portfolio menu-->
+    
+              <li class="dropdown"><a href="#media"><span>Insights</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#News">News</a></li>
+                  <li><a href="#StartupEchosystemUpdates">Startup Echosystem Updates</a></li>
+                  <li class="dropdown"><span><a href="assets\documents\problem_statements.pdf" download
+                        target=_blank>Downloads</span></a>
+    
+                    <ul>
+                      <li class="dropdown"><a href="assets\documents\problem_statements.pdf" target=_blank>Quick
+                          Overview</a></li>
+                      <li class="dropdown"><a href="assets\documents\final_list_project.pdf" target=_blank>Technical
+                          Details</a></li>
+    
+                      <li class="dropdown"><a href="assets\documents\Annexure I_copy.pdf" target=_blank> Project Format
+                          Definition Annexure-I</a></li>
+                    </ul>
+                  </li>
+                  <!-- <li><a href="#portfolio">Gallery</a></li> -->
+                </ul>
+              </li>
+              <!--____________ end of Media menu-->
+    
+              <li class="dropdown"><a href="#events"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="kickstart.html">Kickstart-1</a></li>
+                  <li><a href="#TrainingPrograms">Training Programs</a></li>
+                  <li><a href="#CareerGuidance">Career Guidance</a></li>
+                  <li><a href="#FinancialMentorship">Financial Mentorship</a></li>
+                </ul>
+              </li>
+              <!--____________ end of Events menu-->
+    
+              <li class="dropdown"><a href="#contactus"><span>Connect </span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+    
+                  <li><a href="registration.html" target="_blank">Apply For Incubation</a></li>
+                  <li><a href="#enquirenow">Enquire Now</a></li>
+                  <li><a href="#contact">Contact Us</a></li>
+                </ul>
+              </li>
+              <!--____________ end of Contactus menu-->
+            </ul>
+            <i class="bi bi-list mobile-nav-toggle"></i>
+          </nav><!-- .navbar -->
+    
+        </div>
+      </header><!-- End Header -->
+    <!-- Table -->
+    <main id="main"><br><br>
+        <h3 class="section-title">Our Mentors</h3>
+        <table class="directors">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Photo</th>
+            </tr>
+            <tr>
+                <td>Dr. Prasun Mishra </td>
+                <td> 
+                    Innovation Executive | Investor | Venture Capital | Sustainiability | SDGs | Healthcare | Precision Medicine | Digital Health | Technology | Medical Devices | Drug Discovery & Development </td>
+                <td><img src="https://media.licdn.com/dms/image/D5603AQFtVoD49fP4Lw/profile-displayphoto-shrink_800_800/0/1705687664875?e=1715817600&amp;v=beta&amp;t=gzZCfoUcbpbNg0woFU4GlU8PpIO8v8TIYJKRxEIs4yU" alt="Profile photo of Dr. Prasun Mishra" id="ember291" class="pv-member-photo-modal__content-image evi-image ember-view">
+
+                </td>
+            </tr>
+            <tr>
+                <td>Fabiana Arduini </td>
+                <td>Associate Professor at University of Rome "Tor Vergata , CEO SENSE4MED </td>
+                <td><img src="https://media.licdn.com/dms/image/C4E03AQGEPK6ExvBNCA/profile-displayphoto-shrink_800_800/0/1616539337673?e=1715817600&amp;v=beta&amp;t=rlCIc6qnXC4CMF71CxvPnQnOhZtJ4SwILA5Glh5f15o" alt="Profile photo of Fabiana Arduini" id="ember262" class="pv-member-photo-modal__content-image evi-image ember-view">
+                </td>
+            </tr>
+            <tr>
+                <td>Dr.Prashant Khadke </td>
+                <td>Transforming Healthcare | Genomics Evangelist | Strategic Planning </td>
+                <td><img src="https://media.licdn.com/dms/image/C5103AQGqKgElol_prg/profile-displayphoto-shrink_800_800/0/1516481145766?e=1715817600&amp;v=beta&amp;t=y3qQ2Od37KKAqTMZhA3xfdagSMwaNPhaJPE4cK_ZzLQ" alt="Profile photo of Dr.Prashant Khadke" id="ember185" class="pv-member-photo-modal__content-image evi-image ember-view">
+                </td>
+            </tr>
+            <tr>
+                <td>Dr. Mohan Bhagwat  </td>
+                <td>Business Development Consultant at iNDx Technology Inc.  </td>
+                <td><img src="assets\img\mohan_bhagwat.png" alt=""></td>
+            </tr>
+            <tr>
+                <td>Dr. Rekha Patil  </td>
+                <td>Chairperson at Regulus AgroOrganic Pvt. Ltd. at Regulus Agro-Organic Pvt. Ltd.  </td>
+                <td><img src="https://media.licdn.com/dms/image/C4E03AQHA6edCdF0wLw/profile-displayphoto-shrink_800_800/0/1627326395878?e=1715817600&amp;v=beta&amp;t=2VWfbzDkTX8wF6NtFWXR8sDDzdqYqm7YmJryuxIOmu4" alt="Profile photo of Dr. Rekha Patil" id="ember243" class="pv-member-photo-modal__content-image evi-image ember-view">
+                </td>
+            </tr>
+            <tr>
+                <td>Saurabh Pravin Kirolikar  </td>
+                <td>Research Scientist at Lupin Limited </td>
+                <td><img src="https://media.licdn.com/dms/image/C4D03AQE4dvBtv3WvYw/profile-displayphoto-shrink_800_800/0/1516770417070?e=1715817600&amp;v=beta&amp;t=r5WlBhzyJo4CHCKahPq398cTj_9WVyvhMtYscTdNo7o" alt="Profile photo of Saurabh Pravin Kirolikar" id="ember188" class="pv-member-photo-modal__content-image evi-image ember-view">
+                </td>
+            </tr>
+            <tr>
+                <td>Yogesh Wagh  </td>
+                <td>Entrepreneur, Believer of Omnichannel Retail, Champion of Cognitive Supply Chain Management, Keen interest in Healthcare IoT and OTT, Salesforce, Flutter, and Angular expert </td>
+                <td><img src="https://media.licdn.com/dms/image/D4D03AQF0uNt2R358wg/profile-displayphoto-shrink_800_800/0/1702967313425?e=1715817600&amp;v=beta&amp;t=eUB2QfSiNMwh74eVDprOxBvc7iRYrPUbq4leuQYMJZk" alt="Profile photo of Yogesh Wagh" id="ember260" class="pv-member-photo-modal__content-image evi-image ember-view">
+                </td>
+            </tr>
+            <tr>
+                <td>Stanford Seed Spark  </td>
+                <td>Stanford Seed Spark | Cornell Maha60</td>
+                <td><img src="https://media.licdn.com/dms/image/C5603AQHCQh50--W1Ng/profile-displayphoto-shrink_800_800/0/1626878087894?e=1715817600&amp;v=beta&amp;t=z6i5Zx0hy9mV_HKTz3oEfqNrIrzGQVRyvN14t9nIrvU" alt="Profile photo of Salman Shaikh" id="ember122" class="pv-member-photo-modal__content-image evi-image ember-view">
+                </td>
+            </tr>
+            <tr>
+                <td> Vinay Vyas  </td>
+                <td>DevOps | SRE | Project Management | Solutions Architect | Healthcare | Bioinformatics </td>
+                <td><img width="200" title="Vinay Vyas" src="https://media.licdn.com/dms/image/C4E03AQEQPZT_Ejwd3w/profile-displayphoto-shrink_400_400/0/1596475179887?e=1715817600&amp;v=beta&amp;t=GHcRF23CYv8D8v6ciFP6USfcOyUrUj6QQNLhbZxrlI0" height="200" alt="Vinay Vyas" id="ember33" class="pv-top-card-profile-picture__image pv-top-card-profile-picture__image--show evi-image ember-view">
+                </td>
+            </tr>
+            <tr>
+                <td>Sunil Dane   </td>
+                <td>Runner, Fitness Enthusiast, Founder & President (Strategic Accounts) at e-Zest Solutions Inc. - Your partner for digital innovation  </td>
+                <td><img width="200" title="Sunil Dane" src="https://media.licdn.com/dms/image/C4E03AQHTWJOVH9SgMg/profile-displayphoto-shrink_400_400/0/1564095976958?e=1715817600&amp;v=beta&amp;t=_S0Ve82saURTkAHCb9DAVxwuGRyU_ihDfcfNDTCgPZQ" height="200" alt="Sunil Dane" id="ember31" class="pv-top-card-profile-picture__image pv-top-card-profile-picture__image--show evi-image ember-view">
+                </td>
+            </tr>
+            <tr>
+                <td>Rashmi Chakraborty   </td>
+                <td>Change Maker | Passionate Marketer | Head of Channel & Partner Marketing </td>
+                <td>
+                    <img width="200" title="Rashmi Chakraborty" src="https://media.licdn.com/dms/image/C4D03AQEZyaCy0x-wlQ/profile-displayphoto-shrink_400_400/0/1516629555793?e=1715817600&amp;v=beta&amp;t=SdxVuugoc2fiDGzgRTIjZx-VVx1Pgk9nyRTGDGjUvMM" height="200" alt="Rashmi Chakraborty" id="ember33" class="pv-top-card-profile-picture__image pv-top-card-profile-picture__image--show evi-image ember-view">
+                    </td>
+            </tr>
+            <tr>
+                <td>Manan Thaker   </td>
+                <td>Medical Science Professional, healthcare insights management, healthcare strategy., Ex-Novartis </td>
+                <td>
+                    <img src="https://media.licdn.com/dms/image/D5603AQHFVoab-mV-aA/profile-displayphoto-shrink_800_800/0/1706113352683?e=1715817600&amp;v=beta&amp;t=f9NaGhXe-r1dLt8c7IGrvXAmg5EYT6l0bEJMSXJYAVg" alt="Profile photo of Manan Thaker" id="ember131" class="pv-member-photo-modal__content-image evi-image ember-view">
+                    </td>
+            </tr>
+            <tr>
+                <td>Dr. Shivkumar Ghugare  </td>
+                <td>Research Scientist at Solvay </td>
+                <td>
+                    <img src="https://media.licdn.com/dms/image/C4D03AQHos_cukAQmSQ/profile-displayphoto-shrink_800_800/0/1516836118241?e=1715817600&amp;v=beta&amp;t=7nIUuFADT3R7ToUfS7KEMgpmMRCuz6tQUE0ODHtSwJc" alt="Profile photo of Dr. Shivkumar Ghugare" id="ember190" class="pv-member-photo-modal__content-image evi-image ember-view">
+                    </td>
+            </tr>
+            <tr>
+                <td>Sangya Pundir   </td>
+                <td>Product Manager working on lifescience digital products </td>
+                <td>
+                    <img src="https://media.licdn.com/dms/image/D4E03AQFdo2osqxW41w/profile-displayphoto-shrink_800_800/0/1678141355700?e=1715817600&amp;v=beta&amp;t=uIW5KgdM0DOgsnkMKoIPCNDhZevsCjSEBbM8GHaac_Y" alt="Profile photo of Sangya Pundir" id="ember258" class="pv-member-photo-modal__content-image evi-image ember-view">
+                    </td>
+            </tr>
+            <tr>
+                <td>Society for Innovation & Entrepreneurship SINE IIT Bombay   </td>
+                <td>Technology Incubator -IIT Bombay, Powai Non-profit Organizations  Mumbai, Maharashtra </td>
+                <td>
+                    <img _ngcontent-c12="" class="img-responsive" src="assets/img/sine_iitb.jpg">
+                    </td>
+            </tr>
+            <tr>
+                <td>Navratan Katariya   </td>
+                <td>NASSCOM CoE-IoT. Startup (cleantech/deeptech/IOT/AI) & Renewable energy Specialist  </td>
+                <td>
+                    <img src="https://media.licdn.com/dms/image/C5103AQGN45UN6vV-8g/profile-displayphoto-shrink_800_800/0/1540654952631?e=1715817600&amp;v=beta&amp;t=RUpucMLx-y2Ff61PZ1xoaAq9badkyNoV0R_Fth0mC1Q" alt="Profile photo of Navratan Katariya" id="ember212" class="pv-member-photo-modal__content-image evi-image ember-view">
+                    </td>
+            </tr>
+            <tr>
+                <td>Soma Chattopadhyay   </td>
+                <td>Venture center Pune</td>
+                <td><img src="https://media.licdn.com/dms/image/D4D03AQGdEyFcXc_-lA/profile-displayphoto-shrink_800_800/0/1707417333863?e=1715817600&amp;v=beta&amp;t=DOtzS4pc-9l-dJx1o0kQK2dWqA_k6LL-tdtAu2F6rXs" alt="Profile photo of Soma Chattopadhyay" id="ember158" class="pv-member-photo-modal__content-image evi-image ember-view">
+                </td>
+            </tr>
+        </table>
+        <br>
+
+    </main>
+</body>
+
+<!-- Footer -->
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="copyright">
+                    &copy; Copyright <strong>Shri Gajanan Innovation And Advance Research Center</strong>. All Rights
+                    Reserved
+                </div>
+                <div class="credits">
+                </div>
+            </div>
+        </div>
+    </div>
+</footer><!-- End Footer -->
+
+<div id="preloader"></div>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>
+
+<!-- Vendor JS Files -->
+<script src="assets/vendor/aos/aos.js"></script>
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+<script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+<script src="assets/vendor/typed.js/typed.min.js"></script>
+<script src="assets/vendor/php-email-form/validate.js"></script>
+
+<!-- Template Main JS File -->
+<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

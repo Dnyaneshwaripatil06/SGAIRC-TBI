@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/x-icon" href="assets\img\logo.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      height: 2000px;
+    }
+
+    .icon-bar {
+      position: fixed;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+
+    .icon-bar a {
+      display: block;
+      text-align: center;
+      padding: 16px;
+      transition: all 0.3s ease;
+      color: white;
+      font-size: 20px;
+    }
+
+    .icon-bar a:hover {
+      background-color: #000;
+    }
+
+    .facebook {
+      background: #3B5998;
+      color: white;
+    }
+
+    .twitter {
+      background: #55ACEE;
+      color: white;
+    }
+
+    .google {
+      background: #dd4b39;
+      color: white;
+    }
+
+    .linkedin {
+      background: #007bb5;
+      color: white;
+    }
+
+    .youtube {
+      background: #bb0000;
+      color: white;
+    }
+
+    .content {
+      margin-left: 75px;
+      font-size: 30px;
+    }
+  </style>
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+      width: 100%;
+      height: 1500;
+    }
+  </style>
+  <style>
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    th,
+    td {
+      text-align: left;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #D6EEEE;
+    }
+  </style>
+
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SGIARC-TBI Foundation</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.jpg" rel="icon">
+  <link href="assets/img/logo.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: SGAIRC 1.0
+  * Template URL:https://sgiarctbi.ssgmce.ac.in/
+  * Author: Deepavali Patil in association with Bootstrap
+  ======================================================== -->
+</head>
+
+<body>
+  <div class="icon-bar">
+    <a href="https://www.facebook.com/login/" target=_blank class="facebook"> <i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/i/flow/login" target=_blank class="twitter"> <i class="fa fa-twitter"></i></a>
+    <a href="https://www.blogger.com/dashboard/reading?tab=wj&bpli=1&pli=1&feed=https%3A%2F%2Ffeeds.feedburner.com%2FBloggerBuzz"
+      target=_blank class="google"><i class="fa fa-google"></i></a>
+    <a href="https://www.linkedin.com/login" target=_blank class="linkedin"> <i class="fa fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/watch?v=7nM-mm1P2uA&t=148s" target=_blank class="youtube"><i
+        class="fa fa-youtube"></i></a>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>
+      <!-- Uncomment below if yoImperialmr-auto"><a href="index.html"></a></h1> -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <!-- <li><a class="nav-link scrollto active" href="#hero"></a></li> -->
+          <li><a class="nav-link" href="#hero">Home</a></li>
+
+          <li class="dropdown"><a href="#AboutSGIARC-TBI"><span>About Us</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#">About SGAIRC-TBI Foundation</a></li>
+              <li class="dropdown"><a href="https://ssgmce.ac.in/" target=_blank>Host Institute-SSGMCE</a></li>
+              <li class="dropdown"><a href="#whatwedo">What We Do</a></li>
+              <li class="dropdown"><a href="objective.html">Our Objective</a></li>
+              <li class="dropdown"><a href="operational_strategy.html">Operational Strategy</a></li>
+              <li class="dropdown"><a href="advisory_board.html" target="_blank">Advisory Board</a></li>
+              <li class="dropdown"><a href="board_of_directory.html">Board of Directors</a></li>
+              <li class="dropdown"><a href="board_of_directory.html">Operating Team</a></li>
+              <li class="dropdown"><a href="mentors.html">Our Mentors</a></li>
+              <li class="dropdown"><a href="faqs.html">FAQs</a></li>
+
+            </ul>
+          </li>
+
+          <!--____________ end of about us menu-->
+          <li class="dropdown"><a href="incubation.html"><span>Incubation Benefits</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="incubation.html">Infrastructure</a></li>
+              <li><a href="incubation.html">Funding</a></li>
+              <li><a href="incubation.html">Mentorship</a></li>
+              <li><a href="incubation.html">Consultancy</a></li>
+            </ul>
+          </li>
+          <!--____________ end of Services menu-->
+
+          <li class="dropdown"><a href="#portfolio1"><span>Startup Portfolio</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="stratup_portfolio.html">Process</a></li>
+              <li><a href="stratup_portfolio.html">Active Startups</a></li>
+              <li><a href="stratup_portfolio.html">Graduated Startups</a></li>
+              <li><a href="stratup_portfolio.html">Startup Achievements</a></li>
+              <li><a href="registration.html" target="_blank">Careers</a></li>
+            </ul>
+          </li>
+          <!--____________ end of Portfolio menu-->
+
+          <li class="dropdown"><a href="#media"><span>Insights</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#News">News</a></li>
+              <li><a href="#StartupEchosystemUpdates">Startup Echosystem Updates</a></li>
+              <li class="dropdown"><span><a href="assets\documents\problem_statements.pdf" download
+                    target=_blank>Downloads</span></a>
+
+                <ul>
+                  <li class="dropdown"><a href="assets\documents\problem_statements.pdf" target=_blank>Quick
+                      Overview</a></li>
+                  <li class="dropdown"><a href="assets/documents/problem_statementstech.pdf" target=_blank>Technical
+                      Details</a></li>
+                  <li class="dropdown"><a href="assets\documents\Annexure I_copy.pdf" target=_blank> Project Format
+                      Definition Annexure-I</a></li>
+                  <li class="dropdown"><a href="assets/documents/SGIARC-TBI_FOUNDATION_Company_incorporation.pdf" target=_blank>Certificate</a></li>
+                </ul>
+              </li>
+              <!-- <li><a href="#portfolio">Gallery</a></li> -->
+            </ul>
+          </li>
+          <!--____________ end of Media menu-->
+
+          <li class="dropdown"><a href="#events"><span>Events</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="kickstart.html">Kickstart-1</a></li>
+              <li><a href="training_program.html">Training Programs</a></li>
+              <li><a href="#CareerGuidance">Career Guidance</a></li>
+              <li><a href="#FinancialMentorship">Financial Mentorship</a></li>
+            </ul>
+          </li>
+          <!--____________ end of Events menu-->
+
+          <li class="dropdown"><a href="#contactus"><span>Connect </span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+
+              <li><a href="registration.html" target="_blank">Apply For Incubation</a></li>
+              <li><a href="enquire.html">Enquire Now</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </li>
+          <!--____________ end of Contactus menu-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <div data-aos="fade-in">
+        <div class="hero-logo">
+          <img class="" src="assets/img/logo.png" alt="SGIARC-TBI Foundation">
+        </div>
+
+        <h1> Welcome to SGIARC-TBI Foundation</h1>
+
+        <h2>We're R&D and Incubation Centre</h2>
+        <h3><b>We are having strong team of talented proficient, skilled professionals</b></h3>
+        <div class="actions">
+          <a href="#AboutSGIARC-TBI" class="btn-get-started">Get Strated</a>
+          <a href="#Services" class="btn-get-started">Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+    <hr>
+    <!-- ======= About Section ======= -->
+    <section id="AboutSGIARC-TBI">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">About Us</h3>
+            <div class="section-title-divider"></div>
+            <p class="section-description">To impart world class Engineering, Entrepreneurship and Management education
+              in an environment of Spiritual foundation to serve the global society</p>
+          </div>
+        </div>
+      </div>
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+
+          <div class="col-lg-6 about-img">
+            <img src="assets/img/hero-bg.jpg" alt="" width=520 height=500>
+          </div>
+
+          <div class="col-md-6 about-content">
+            <h2 class="about-title">We provide great services and mentorship to the entrepreneur</h2>
+            <p class="about-text" style="text-align:justify;">
+
+              The SGIARC-TBI Foundation is a non-profit organisation that provides support and resources to
+              entrepreneurs in India. The Foundation is committed to fostering innovation and entrepreneurship for
+              sustainable development.
+              The Foundation focuses on key sustainable development sectors, including agri-tech, food tech, edu-tech,
+              health-tech, and clean energy. The Foundation offers a wide range of services to support entrepreneurs at
+              all stages of the startup journey, from ideation to market entry.
+              The Foundation is also committed to promoting social impact and environmental sustainability. The
+              Foundation supports startups that are developing solutions to key social and environmental challenges. The
+              Foundation also mentors grass root innovations supporting green developments and prompts women-led
+              start-ups supporting ESGs.
+              The SGIARC-TBI Foundation is a valuable resource for entrepreneurs in India. The Foundation's commitment
+              to fostering innovation and entrepreneurship for sustainable development is commendable. I believe that
+              the Foundation will make a significant contribution to the development of India's startup ecosystem and
+              the achievement of the Sustainable Development Goals.
+
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <hr>
+    <!--=========What We Do?=============-->
+
+    <section id="whatwedo">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">What We Do?</h3>
+            <div class="section-title-divider"></div>
+            <h4 class="about-title">At SGIARC, we do a variety of activities to support entrepreneurs and foster
+              innovation and entrepreneurship for sustainable development. Here are a few examples:</h4>
+          </div>
+        </div>
+      </div>
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+
+          <div class="col-md-13 about-content" style="text-align:justify;">
+            <p class="about-text" style="text-align:justify;">
+              ● Organise awareness camps and workshops: We raise
+              awareness about entrepreneurship and the startup process through impactful camps and workshops. These
+              events provide a platform for potential entrepreneurs to learn about the startup journey, connect with
+              experienced mentors, and get inspired by the success stories of other entrepreneurs.<br>
+              <br>
+              ● Establish domain-specific clubs and associations: We establish domain-specific clubs and associations to
+              provide a supportive and collaborative environment for entrepreneurs. These clubs and associations connect
+              entrepreneurs with other entrepreneurs, mentors, and industry experts in their respective fields.
+              <br><br>
+              ● Provide one-on-one mentoring: We provide one-on-one mentoring to entrepreneurs, connecting them with
+              experienced mentors who can provide guidance and support on a variety of topics, including business
+              planning, product development, marketing, and fundraising.
+              <br><br>
+              ● Offer financial assistance: We offer financial assistance to entrepreneurs through grants and other
+              funding opportunities. This financial assistance can help entrepreneurs to cover the costs of starting and
+              growing their businesses.
+              <br><br>
+              ● Organize networking events and create a community of support: We organize networking events and create a
+              community of support for entrepreneurs. These events and programs provide entrepreneurs with the
+              opportunity to connect with other entrepreneurs, mentors, and investors.
+              <br><br>
+              In addition to these activities, we also support startups that are developing solutions to key social and
+              environmental challenges. We also mentor grass root innovations supporting green developments and prompt
+              women-led start-ups supporting ESGs.
+              At SGIARC-TBI, we are committed to helping entrepreneurs succeed and building a more sustainable future.
+            </p>
+
+            <h5><b><i>Powering Entrepreneurship</i></b></h5>
+            <div>
+              <p>Start-up ventures increasingly emerge from cutting-edge innovations at premier academic institutions,
+                and play an important role in the transfer of technology to the industry and society at large. In the
+                globalized world today and with the rising importance of pioneering solutions addressing the needs of
+                the society, the modern entrepreneurial cycle has crucial value. Start-up ventures can step in and fill
+                the gap in the technology-transfer chain, in areas where conventional companies would be more cautious
+                in view of novelty of field or risks involved on return of investment. Thus start-ups today play a vital
+                role, not only as drivers of innovative solutions to societal challenges, but also as job creators and
+                economic stimulators.</p>
+            </div>
+
+
+            <div>
+              <p>However, the entrepreneurial culture in India is still in its nascent stages, and young entrepreneurs
+                face several challenges, including lack of structured access to resources and an ecosystem to sustain
+                them through the high-risk initial stages. Since technology and knowledge based start-ups are ideally
+                poised to emerge from universities, the role of academic incubators in providing a support system for
+                the entrepreneurial culture to take root and flourish is now widely recognized. SGAIRC-TBI Foundation,
+                Shegaon, with its resources such as its extensive social, academic and industrial network and the
+                Research Park, is uniquely positioned to provide a boost to technology-based entrepreneurship. In order
+                to attain organic growth and emerge effective in supporting the entrepreneurial ecosystem, SGAIRC's
+                incubators are in need of strong financial and other support. While support from Government in
+                sustaining this process is crucial, the role of corporate sector cannot be overstated, and the Companies
+                Act, 2013 provides an ideal route for the latter through the Corporate Social Responsibility (CSR)
+                channel. </p>
+            </div>
+
+            <h5><b><i>Women Entrepreneurship </i></b>
+              <br>
+              <a href=" Women Entrepreneurship (startupindia.gov.in)">Women Entrepreneurship (startupindia.gov.in)</a>
+            </h5>
+
+            <h5><b><i>Funds For Technology Incubators In Academic Institutions Get CSR Status</i></b></h5>
+            <div>
+              <p>Section 135 of the Companies Act, 2013 lists permitted CSR activities, and by a key recent amendment,
+                <b>"contributions or funds provided to technology incubators located within academic institutions which
+                  are approved by the Central Government"</b> qualify as a CSR expenditure. SGAIRC-TBI, Shegaon has
+                established two incubators recognized by Ministry of Science and Technology, Govt. of India, which hence
+                qualify to receive funds from Indian and foreign companies operating in India as part of fulfilling
+                their CSR obligations under the Companies Act 2013.
+              </p>
+            </div>
+
+            <div>
+              <p>A vibrant entrepreneurial ecosystem needs strong capital inflows to fuel startups to become
+                enterprises. In collaboration with corporate, SGAIRC incubators aim to promote Incubators as
+                Entrepreneurial hubs with intimate private sector engagement. <b>Funds will be utilized for seed and
+                  early stage investments in incubated companies and creation of facilities for rapid growth and
+                  sustenance of start-up ventures</b></p>
+            </div>
+
+            <div>
+              <p>We invite the corporate sector to partner with us and contribute to SGAIRC's start-up vision for the
+                nation through CSR. SGAIRC-TBI's impeccable record, growth and global position will provide your company
+                with unmatched potential for your CSR activities, with assured impact, value and visibility.</p>
+            </div>
+
+            <h4><b>
+                <div class="row content">
+                  <div>
+                    <center>Social Initiative @ SGAIRC-TBI Foundation</center>
+                    <!-- <h3 class="section-title">Social Initiative @ SGAIRC-TBI Foundation</h3> -->
+                  </div>
+                  <br>
+                </div>
+              </b>
+            </h4>
+
+            <ol>
+
+              <li>iWomen:</li> <br>
+              We are helping women entrepreneurs to generate a network of opportunities and assist women who are
+              interested in starting their own business. Women entrepreneurs meet a lot of problems at the
+              pre-investment stage, investment stage, and post-investment stage. Banks to consider women less
+              creditworthy as they do not have property in their name. To promote women entrepreneurship, we have
+              designed a special program iWoman, which aims to facilitate an environment regarding training, co-working
+              space, product development, mentoring, investments and market support.<br>
+              <br>
+
+              <li><i>Rural Entrepreneurship Development (RED): </i> <br>
+                This program is specially designed for India considering the below mentioned challenges faced by Rural
+                Population. Major population is staying in villages. Agriculture being major occupation of the people,
+                we are giving more emphasis on "Agri-Tech" domain. To promote rural entrepreneurship we have designed a
+                special program RED (Rural Entrepreneurship Development), which aims to facilitate an environment in
+                terms of training, co-working space, product development, mentoring, investments and market support.
+
+                <ul>
+                  <li>The Rural Entrepreneurs Particularly Do Not Know How To Synchronize Their Skills With The Market
+                    Requirements.
+                  <li>Inefficient Management for Marketing and Sale.
+                  <li>Stiff Competition.
+                  <li>Low Mobility.
+                  <li>Social Attitudes
+                  <li>Lower Ability To Bear Risk.
+                  <li>Lack Of Education
+                  <li>Low Need for Achievement.
+                  <li>Inadequate Infrastructure.
+                </ul>
+                <br>
+              <li><i>Affirmative Action:</i> <br>
+                Under Affirmative Action, we intend to connect smaller manufacturing companies will the bigger
+                manufacturing organizations. We will assist SME's to get aligned with the compliances of bigger
+                organizations. More interactions and collaborations will be targeted via trade fairs and conferences.
+                <br>
+                We also invite all organizations to participate in our initiative of connecting companies with each
+                other.
+            </ol>
+
+          </div>
+        </div>
+      </div>
+    </section><!-- End What We Do? -->
+
+
+    <hr>
+
+    <!--=========sTARTUP eCHO SYSTEM=============-->
+    <br>
+    <section id="StartupEchosystemUpdates">
+          <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Startup Ecosystem Updates</h3>
+            <div class="section-title-divider"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container about-container" data-aos="fade-up" data-aos-delay="200">
+        <div class="row">
+          <div class="col-md-13 about-content" style="text-align:justify;">
+            <h5><b>Why start-ups fail even when they don't face a cash crunch-Business Line?</b></h5>
+            <h6>
+              <a href="https://www.thehindubusinessline.com/info-tech/why-start-ups-fail-even-when-they-dont-face-a-cash-crunch/article25498832.ece?homepage=true"
+                target=_blank><b>For more detail click here</b></a>
+            </h6>
+    </section><!-- End sTARTUP eCHO SYSTEM -->
+
+
+    <!-- ======= Subscribe Section ======= -->
+    <section id="subscribe">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-8">
+            <h3 class="subscribe-title">Register @ SGIARC-TBI Foundation</h3>
+            <p class="subscribe-text">Join us to incubate your start up or you can contribute yourself @ SGIARCT-TBI
+              Foundation and get access to the latest Infrastructures, tools and mentors and much more!</p>
+          </div>
+          <div class="col-md-4 subscribe-btn-container">
+            <a class="subscribe-btn" href="registration.html" target=_blank>Register Now</a>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Subscrbe Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact">
+      <div class="container" data-aos="fade-up">
+        <div class="row">
+          <div class="col-md-12">
+            <h3 class="section-title">Contact Us</h3>
+            <div class="section-title-divider"></div>
+
+            <div class="row justify-content-center">
+              <div class="col-lg-3 col-md-4">
+                <div class="info">
+                  <div>
+                    <i class="bi bi-geo-alt"></i>
+                    <p>Khamgaon Road<br>Shegaon(MH)-444203</p>
+                  </div>
+
+                  <div>
+                    <i class="bi bi-envelope"></i>
+                    <p>info@sgiarctbi.ssgmce.ac.in</p>
+                  </div>
+
+                  <div>
+                    <i class="bi bi-phone"></i>
+                    <p>Phone: (07265) 252478<br> Ext. 463,465</p>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="col-lg-5 col-md-8">
+                <div class="form">
+                  <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="form-group">
+                      <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group mt-3">
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                        required>
+                    </div>
+                    <div class="form-group mt-3">
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
+                        required>
+                    </div>
+                    <div class="form-group mt-3">
+                      <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <div class="my-3">
+                      <div class="loading">Loading</div>
+                      <div class="error-message"></div>
+                      <div class="sent-message">Your message has been sent. Thank you!</div>
+                    </div>
+                    <div class="text-center"><button type="submit">Send Message</button></div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="copyright">
+              &copy; Copyright <strong>Shri Gajanan Innovation And Advance Research Center</strong>. All Rights
+              Reserved.
+            </div>
+            <div class="credits">
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center">
+      <i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/typed.js/typed.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

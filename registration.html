@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/registration_form.css">
+
+    <style>
+        .SINE_Registration_Form {
+            margin-top: 40px;
+        }
+
+        .container {
+            padding: 10px;
+            border: 1px solid #eee;
+            box-shadow: 11px 9px 14px 4px #eee;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            visibility: visible;
+        }
+
+        p {
+            font-size: 34px;
+            display: inline;
+        }
+
+        .logoImg {
+            text-align: right;
+        }
+
+        .input-field>label {
+            color: #545252;
+        }
+
+        #label {
+            color: #545252;
+        }
+    </style>
+    <style>
+        #file{
+            font-size: 15px;
+            color: #545252;
+            margin-left: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row SINE_Registration_Form">
+            <div id="SINE_Registration_Form" class="col s12 inBorder">
+                <div class="col l12 m12 s12">
+                    <div class="col s6 headingText">
+                        <p>SGAIRC Registration Form</p>
+                    </div>
+                    <div class="col s6 logoImg">
+                        <img class="formImg" onerror="hideLogo();" alt="test_img" src="assets/img/logo.png"
+                            style="display: inline;">
+                    </div>
+                </div>
+                <form class="formDiv formDiv_1" id="formDivSINE_Registration_Form" method="post"
+                    onsubmit="return saveDataSINE_Registration_Form();">
+                    <div class="input-field col l6 m12 s12">
+                        <select id="field46935" name="field46935">
+                            <option value="" disabled selected>Choose Title</option>
+                            <option value="Mr.">Mr.</option>
+                            <option value="Ms.">Ms.</option>
+                            <option value="Dr.">Dr.</option>
+                            <option value="Prof.">Prof.</option>
+                        </select>
+                        <label for="field46935">Title <span class="req">*</span></label>
+                    </div>
+                    <div class="input-field col l6 m12 s12">
+                        <input id="field46936" name="field46936" type="text" class="inputFieldClass" required>
+                        <label for="field46936" id="label">Applicant First Name <span class="req">*</span></label>
+                    </div>
+
+                    <div class="input-field col l6 m12 s12">
+                        <label for="field46937" id="label">Applicant Middle Name <span class="req"></span></label>
+                        <input id="field46937" name="field46937" type="text" class="inputFieldClass">
+                    </div>
+                    <div class="input-field col l6 m12 s12">
+                        <label for="field46938" id="label">Applicant Surname <span class="req">*</span></label>
+                        <input id="field46938" name="field46938" type="text" class="inputFieldClass">
+                    </div>
+                    <div class="input-field col l6 m12 s12">
+                        <input type="text" id="field47064" name="field47064" class="datepicker inputFieldClass"
+                            onchange="return dateFunc('field47064');">
+                        <label for="field47064" id="label">Date of Birth <span class="req">*</span></label>
+                    </div>
+                    <div class="input-field col l6 m12 s12">
+                        <label for="field46939" id="label">Mobile No. <span class="req">*</span></label>
+                        <input id="field46939" name="field46939" type="text" class="inputFieldClass">
+                    </div>
+                    <div class="input-field col l6 m12 s12">
+                        <label for="field46940" id="label">Email Id <span class="req">*</span></label>
+                        <input id="field46940" name="field46940" type="text" class="inputFieldClass">
+                    </div>
+                    <div class="input-field col l6 m12 s12">
+                        <label for="field46949" id="label">Company Name (If not registered then keep it blank) <span
+                                class="req"></span></label>
+                        <input id="field46949" name="field46949" type="text" class="inputFieldClass">
+                    </div>
+                    
+                    <div class="input-field col l12 m12 s12">
+                        <textarea id="field46982" name="field46982" class="materialize-textarea inputFieldClass"
+                            onkeyup="return limitText('46982',50,'');" style="height: 46px;"></textarea>
+                        <!-- <span class="count_46982 check_textCount"> Words left :50 </span> -->
+                        <label for="field46982" id="label">Idea / Topic / Value Proposition <span
+                                class="req">*</span></label>
+                    </div>
+
+                        <label for="field46982" id="file">Upload your audio or video</label>
+                        <input id="field46949" name="field46949" type="file" class="inputFieldClass">
+                        <hr>
+                    <br>
+
+                    <!-- Add other input fields similarly -->
+                    <div class="col l12 m12 s12 checkCaptcha_formDivSINE_Registration_Form checkCaptcha_1">
+                        <div>
+                            <label id="label">
+                                <input type="checkbox" name="checkBot" id="checkBot_1" required>
+                                <span>I'm not a bot</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col s12 m12 l12 xl12" style="text-align:center;">
+                        <!-- Add hidden fields -->
+                        <button class="btn waves-effect waves-light" type="submit" name="save">Submit
+                            <i class="material-icons right">send</i>
+                        </button>
+                        <button class="btn waves-effect waves-light" type="reset" name="cancel">Cancel
+                            <i class="material-icons right">cancel</i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Include Materialize CSS and JavaScript -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        // Initialize select dropdown
+        $(document).ready(function () {
+            $('select').formSelect();
+        });
+
+        // Function to save form data
+        function saveDataSINE_Registration_Form() {
+            // Add your form validation and submission logic here
+        }
+    </script>
+</body>
+
+</html>
